@@ -1,12 +1,19 @@
+html {
+    box-sizing: border-box;
+}
 
 body {
     background-color: #f1ead2;
 }
 
-aside {
-    text-align: justify;
-    background-color: #eae28c;
-    padding: 20px;
+img {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.two-img {
+    width: 70%;
 }
 
 #skip a {
@@ -55,6 +62,11 @@ aside {
     text-align: left;
 }
 
+.warning {
+    background-color: #eae28c;
+    padding: 20px;
+    text-align: center;
+}
 
 @media screen and (min-width: 600px) {
     .nav-flex {
@@ -68,6 +80,15 @@ aside {
         grid-template-columns: 1fr;
     }
 
+    img {
+        display: inline;
+        width: 80%;
+    }
+
+    .two-img {
+        width: 42%;
+    }
+
 }
 
 @media screen and (min-width: 900px) {
@@ -77,5 +98,13 @@ aside {
 
     .container {
         width: 60%;
+    }
+
+    img {
+        width: 65%;
+    }
+
+    .two-img {
+        width: 47%;
     }
 }
