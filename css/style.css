@@ -1,21 +1,81 @@
-#skip {
+
+body {
+    background-color: #f1ead2;
+}
+
+aside {
+    text-align: justify;
+    background-color: #eae28c;
+    padding: 20px;
+}
+
+#skip a {
     position: absolute;
     top: -40px;
-    left: 0;
-    height: 40px;
+    left: 20px;
+    transition: top 0.5s ease-out;
+    text-decoration: none;
 }
 
-#skip:focus {
-    top: 20px;
+@media (prefers-reduced-motion: reduce) {
+    #skip a {
+        transition: none;
+    }
 }
 
-nav ul li {
-    display: inline;
+#skip a:focus {
+    top: 20px;    
 }
 
-nav .active {
+.active {
     text-transform: uppercase;
     font-weight: bold;
     color: #000;
     text-decoration: none;
+}
+
+.nav-flex {
+    display: flex;
+    margin: 20px auto;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 85%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.container ul {
+    text-align: left;
+}
+
+
+@media screen and (min-width: 600px) {
+    .nav-flex {
+        width: 40%;
+        flex-direction: row;
+    }
+
+    .container {
+        text-align: left;
+        width: 80%;
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media screen and (min-width: 900px) {
+    .nav-flex {
+        width: 30%;
+    }
+
+    .container {
+        width: 60%;
+    }
 }
