@@ -6,10 +6,22 @@ body {
     background-color: #f1ead2;
 }
 
+nav {
+    width: 80%;
+    padding: 2px;
+    margin: 0 auto;
+    background-color: rgb(144, 215, 171);
+    border: 4px solid rgb(92, 172, 123);
+}
+
 img {
     display: block;
     margin: 0 auto;
     width: 80%;
+}
+
+:focus {
+    outline: 5px solid rgb(52, 52, 245);
 }
 
 .two-img {
@@ -18,10 +30,16 @@ img {
 
 #skip a {
     position: absolute;
-    top: -40px;
+    padding: 20px;
+    top: -60px;
     left: 20px;
     transition: top 0.5s ease-out;
     text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    border-radius: 30px;
+    background-color: rgb(212, 108, 108);
+
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -68,6 +86,10 @@ img {
     text-align: center;
 }
 
+.frame {
+    display: none;
+}
+
 @media screen and (min-width: 600px) {
     .nav-flex {
         width: 40%;
@@ -89,10 +111,18 @@ img {
         width: 42%;
     }
 
+    .warning {
+        display: inline-block;
+    }
+
+    .frame {
+        display: block;
+    }
 }
 
 @media screen and (min-width: 900px) {
     .nav-flex {
+        justify-content: space-between;
         width: 30%;
     }
 
