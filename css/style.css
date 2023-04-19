@@ -57,6 +57,7 @@ img {
     font-weight: bold;
     color: #000;
     text-decoration: none;
+    outline: 3px solid rgb(74, 183, 11);
 }
 
 .nav-flex {
@@ -76,6 +77,10 @@ img {
     margin: 0 auto;
 }
 
+section {
+    padding: 1px;
+}
+
 .container ul {
     text-align: left;
 }
@@ -90,7 +95,7 @@ img {
     display: none;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
     .nav-flex {
         width: 40%;
         flex-direction: row;
@@ -99,7 +104,6 @@ img {
     .container {
         text-align: left;
         width: 80%;
-        grid-template-columns: 1fr;
     }
 
     img {
@@ -120,7 +124,7 @@ img {
     }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1000px) {
     .nav-flex {
         justify-content: space-between;
         width: 30%;
